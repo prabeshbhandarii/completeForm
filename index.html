@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Form</title>
+   <!-- css -->
+   <link rel="stylesheet" href="styles.css">
+   <!-- js -->
+   <script src="script.js" defer></script>
+   <!-- boxicons css -->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   <div class="container">
+      <header>Signup</header>   
+      <form action="">
+         <div class="field">
+            <div class="input-field email-field">
+               <input type="email" placeholder="Enter your email" />
+            </div>
+            <span class="error email-error">
+               <i class="bx bx-error-circle error-icon"></i>
+               <p class="error-text">Please enter a valid email</p>
+            </span>
+         </div>
+         <div class="field create-password">
+            <div class="input-field">
+               <input type="password" class="password" placeholder="Create your password" />
+               <i class='bx bx-hide show-hide'></i>
+            </div>
+            <span class="error password-error">
+               <i class="bx bx-error-circle error-icon"></i>
+               <p class="error-text">Please enter at least 8 characters with number, uppercase, lowercase and symbols</p>
+            </span>
+         </div>
+         <div class="field confirm-password">
+            <div class="input-field">
+               <input type="password" placeholder="Confirm password" />
+               <i class='bx bx-hide show-hide'></i>
+            </div>
+            <span class="error cpassword-error">
+               <i class="bx bx-error-circle error-icon"></i>
+               <p class="error-text">Password does not match</p>
+            </span>
+         </div>
+         <div class="input-field button">
+            <input type="submit" value="Submit">
+         </div>
+      </form>
+   </div>
+</body>
+</html> 
