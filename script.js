@@ -4,12 +4,12 @@ const form = document.querySelector("form"),
     passField = form.querySelector(".create-password"),
     passInput = passField.querySelector(".password"),
     cPassField = form.querySelector(".confirm-password"),
-    cPassInput = cPassField.querySelector(".cpassword");
+    cPassInput = cPassField.querySelector(".cPassword");
 
 //Email validation
 function checkEmail(){
-    const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-    if(!emailInput.value.match(pattern)){
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if(!emailInput.value.match(emailPattern)){
         return emailField.classList.add("invalid");
     }
         emailField.classList.remove("invalid");
