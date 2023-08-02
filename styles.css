@@ -49,6 +49,9 @@ form .input-field{
   border: 1px solid #d1d1d1;
   padding: 0 15px;
 }
+.invalid input{
+  border-color: #d93025;
+}
 .input-field .show-hide{
   position: absolute;
   right: 13px;
@@ -64,9 +67,13 @@ form .input-field{
   display: flex;
   align-items: center;
   margin-top: 6px;
-  color: rgb(172, 21, 21);
+  color: #d93025;
   font-size: 13px;
   display: none;
+}
+
+.invalid .error{
+  display: flex;
 }
 .error .error-icon{
   margin-right: 6px;
